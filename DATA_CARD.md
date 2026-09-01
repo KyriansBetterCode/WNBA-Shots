@@ -1,12 +1,12 @@
 # Data Card: WNBA Spatial Shot Dataset
 
 ## What Qualifies my Data For the Project?
-**At least 2,000 rows:** The data has 38,535 rows
-**Clear outcome:** `SHOT_MADE_FLAG` (0 or 1)
-**At least 8 useful input columns:** 23 columns (`LOC_X`, `LOC_Y`, `ACTION_TYPE`, `SHOT_DISTANCE`, `SHOT_ZONE_RANGE`, etc...)
-**A subgroup column:** `TEAM_NAME`, `SHOT_ZONE_BASIC`, `PLAYER_NAME`
-**Cause and effect question:** *Does 4th quarter fatigue cause drops in efficiency independent of shot selection?*
-**Origin:** Extracted from official `stats.nba.com` tracking via `nba_api`
+### **At least 2,000 rows:** The data has 38,535 rows
+### **Clear outcome:** `SHOT_MADE_FLAG` (0 or 1)
+### **At least 8 useful input columns:** 23 columns (`LOC_X`, `LOC_Y`, `ACTION_TYPE`, `SHOT_DISTANCE`, `SHOT_ZONE_RANGE`, etc...)
+### **A subgroup column:** `TEAM_NAME`, `SHOT_ZONE_BASIC`, `PLAYER_NAME`
+### **Cause and effect question:** *Does 4th quarter fatigue cause drops in efficiency independent of shot selection?*
+### **Origin:** Extracted from official `stats.nba.com` tracking via `nba_api`
 
 ## Data Card Questions
 ### 1. Where the Data Came From?
