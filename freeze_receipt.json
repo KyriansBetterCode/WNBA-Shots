@@ -1,0 +1,94 @@
+{
+  "course": "CMAT 651",
+  "dataset": "WNBA 2025 shot chart",
+  "outcome": "made_flag",
+  "seed": 651,
+  "frozen_at": "2026-10-25T09:29:18",
+  "python": "3.12.3",
+  "pandas": "3.0.2",
+  "numpy": "2.4.4",
+  "raw_file": "wnba_shots_2025.csv",
+  "raw_sha256": "12979f93e9d8e903f1fb2a8f9039b0a5d94109a5c8aab178f8a8d6f7b0bd60bf",
+  "raw_rows": 38535,
+  "raw_cols": 24,
+  "clean_file": "wnba_clean.csv",
+  "clean_sha256": "6dfadf4db636d0371e66d154a511b5d63ceac5d3b5819d486b74e686c85fe2a7",
+  "clean_rows": 38535,
+  "clean_cols": 22,
+  "clean_columns": [
+    "game_id",
+    "game_event_id",
+    "player_id",
+    "player_name",
+    "team_id",
+    "team_name",
+    "period",
+    "action_type",
+    "shot_type",
+    "shot_zone_basic",
+    "shot_zone_area",
+    "shot_zone_range",
+    "shot_distance",
+    "loc_x",
+    "loc_y",
+    "made_flag",
+    "game_date",
+    "htm",
+    "vtm",
+    "seconds_left",
+    "is_overtime",
+    "is_backcourt"
+  ],
+  "sample_file": "data/wnba_sample_10k.csv",
+  "sample_sha256": "40e57c59bf13d6031b016816c6cbf3d506b7dac24a36736f890135476d5ba25b",
+  "sample_rows": 10000,
+  "sample_method": "df.sample(n=10000, random_state=651).sort_index()",
+  "cleaning_log": [
+    {
+      "step": "raw",
+      "rows": 38535,
+      "cols": 24
+    },
+    {
+      "step": "drop duplicates",
+      "rows": 38535,
+      "cols": 24
+    },
+    {
+      "step": "lowercase names, strip text",
+      "rows": 38535,
+      "cols": 24
+    },
+    {
+      "step": "drop constant columns",
+      "rows": 38535,
+      "cols": 22
+    },
+    {
+      "step": "drop event_type, rename made_flag",
+      "rows": 38535,
+      "cols": 21
+    },
+    {
+      "step": "parse game_date",
+      "rows": 38535,
+      "cols": 21
+    },
+    {
+      "step": "seconds_left",
+      "rows": 38535,
+      "cols": 20
+    },
+    {
+      "step": "flags",
+      "rows": 38535,
+      "cols": 22
+    },
+    {
+      "step": "sort",
+      "rows": 38535,
+      "cols": 22
+    }
+  ],
+  "independent_unit_for_group_bootstrap": "game_id (shots within a game, and within a player, are not independent)"
+}
