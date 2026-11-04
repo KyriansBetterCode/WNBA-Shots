@@ -44,5 +44,5 @@ Seed 651 everywhere.
 ## AI disclosure
 
 - **Gemini.** Helped with my code and with sorting movement shots from the `action_type` text. I chose the rule: labels with Driving, Pullup/Pull-Up or Step Back are "off-the-dribble (by label)"; everything else is "not labeled as off-the-dribble".
-- **Claude (Anthropic).** Helped write the bios scripts, the data card and the proposal edits. I ran the scripts and checked the row count after the join. I found the 6,566 missing weights myself and chose to use height.
+- **Claude (Anthropic).** Helped write the bios script and the data card. I ran the scripts and checked the row count after the join. I found the 6,566 missing weights myself and chose to use height.
 - The question, the decision it helps with, and the claims I make are my own.
