@@ -1,10 +1,13 @@
 .venv/
-__pycache__/
 .DS_Store
-.venv/
 __pycache__/
-.DS_Store
-.venv/
-__pycache__/
-.DS_Store
+.ipynb_checkpoints/
+*.pyc
+.env
+
+# data (NBA.com terms: do not redistribute)
+wnba_raw.csv
 wnba_clean.csv
+shots_with_bios.csv
+player_bios.csv
+wnba_shots_2025.csv

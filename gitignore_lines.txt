@@ -1,2 +1,0 @@
-wnba_clean.csv
-wnba_shots_2025.csv
